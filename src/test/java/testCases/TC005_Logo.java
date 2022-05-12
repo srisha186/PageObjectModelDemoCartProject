@@ -8,7 +8,7 @@ import pageClasses.Logo;
 public class TC005_Logo extends BaseClass {
 	
 	@Test
-	public void verifyLogin() {
+	public void verifyLogo() {
 		
 	Logo lo=new Logo(driver);
 	lo.logo();	

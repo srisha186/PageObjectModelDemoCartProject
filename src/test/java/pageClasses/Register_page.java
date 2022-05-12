@@ -24,7 +24,6 @@ public class Register_page extends BasePage {
 	@FindBy(name = "lastname")
 	public WebElement txtField_lastname;
 
-	
 	@FindBy(name="email")
 	public WebElement txtField_email;
 	
@@ -62,8 +61,6 @@ public class Register_page extends BasePage {
 		
 	}
 	
-	
-
 }
 
 /*

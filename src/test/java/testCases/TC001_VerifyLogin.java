@@ -1,6 +1,9 @@
 package testCases;
 
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import com.relevantcodes.extentreports.LogStatus;
 
 import base.BaseClass;
 import pageClasses.AccountLogin;
@@ -8,7 +11,8 @@ import pageClasses.YourStore;
 
 public class TC001_VerifyLogin extends BaseClass {
 	
-	@Test
+	
+	@Test(description="Verify Login")
 	public void verifyLogin() {
 		
 	YourStore st = new YourStore(driver);
@@ -16,8 +20,13 @@ public class TC001_VerifyLogin extends BaseClass {
 	st.doClickOnbtnLogin();
 	
 	AccountLogin al=new AccountLogin(driver);
-	al.doLogin2("abcsri70@gmail.com", "abc@sri123");
-	
+	//al.enterEmailAddress();
+	//al.enterPassword();
+	//al.doLogin();
+	al.doLogin2("abcsri70@gmail.com","abc@sri123");
+
 	}
+	
+	
 	
 }

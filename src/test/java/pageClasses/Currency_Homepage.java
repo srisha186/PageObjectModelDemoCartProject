@@ -37,6 +37,13 @@ public class Currency_Homepage<WebElements> extends BasePage {
 				break;
 
 			}
+			else if(currency.endsWith("Pound Sterling")){
+				System.out.println("The value is Pound Sterling");
+			
+			}
+			else
+				System.out.println("The value is US Dollar");
+
 
 		}
 	}

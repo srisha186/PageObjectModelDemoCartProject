@@ -73,7 +73,7 @@ public class PurchaseItem_HomePage extends BasePage {
 	}
 	public void date_applecinema() {
 		dateicon_applecinema.click();
-		while (!monthval.getText().contains("June 2020")) {
+		while (!monthval.getText().contains("June 2013")) {
 			desired_monthdateval.click();
 		}
 		for (int i = 0; i < totdays.size() ; i++) {

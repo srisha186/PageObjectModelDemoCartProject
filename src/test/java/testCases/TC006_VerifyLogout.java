@@ -4,7 +4,6 @@ import org.testng.annotations.Test;
 
 import base.BaseClass;
 import pageClasses.AccountLogin;
-import pageClasses.Logo;
 import pageClasses.MyAccount_Logout;
 import pageClasses.YourStore;
 
@@ -18,7 +17,9 @@ public class TC006_VerifyLogout extends BaseClass {
 		st.doClickOnbtnLogin();
 
 		AccountLogin al = new AccountLogin(driver);
-		al.doLogin2("abcsri70@gmail.com", "abc@sri123");
+		al.enterEmailAddress();
+		al.enterPassword();
+		al.doLogin();
 
 		MyAccount_Logout out = new MyAccount_Logout(driver);
 		out.myAccount_Logout();
